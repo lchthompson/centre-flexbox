@@ -1,0 +1,226 @@
+html {
+    font-size:16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.container{
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+}
+h1 {
+	font-size: 2em;
+	justify-content: center;
+	padding-bottom: 20px;
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+
+}
+h2 {
+	font-size: 1.5em;
+	justify-content: left;
+}
+h3 {
+	font-size: 1em;
+	justify-content: left;
+}
+
+p {
+	font-size: 1em;
+	display: flex;
+	justify-content: left;
+ 
+}
+
+/*The widths are in a percentage!*/
+header {
+	width: 100%;	
+}
+
+header h1 {
+	padding-top: 20px;
+}
+header h1 span {
+	color: #77a466;
+	padding-right: 10px;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+	padding-bottom: 20px;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+	display: flex;
+	justify-content: center;
+}
+
+.top-section,
+.bottom-section {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.main-image {
+	float: left;
+}
+.main-image img {
+	width: 100%;
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+	float: left;
+}
+.main-title h2 {
+	text-align: left;
+	padding-left: 3%;
+	color: #77a466;
+}
+.main-title p {
+	padding-left: 3%;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border-top: 1px solid #eee;
+}
+
+.section-one h3 {
+	padding-left: 3%;
+}
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-two h3,
+.section-three h3 {
+	padding-left: 3%;
+}
+
+.menu {
+	list-style: none;
+	padding-left: 3%;
+
+}
+.menu li {
+	line-height: 35px;
+	color:#77a466;
+}
+
+.reviews {
+	padding-left: 3%;
+	padding-right: 3%;
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+	padding-left: 3%;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	text-align: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 1em;
+	padding: 3px;
+}
+
+
+
+
+/*---------- TABLET ----------*/
+@media (min-width: 768px) {
+
+.section-one,
+.section-two,
+.section-three {
+	width: 33%;
+	height: auto;
+	float: left;
+	border-top: 1px solid #eee;
+}
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+}
+
+	
+/*---------- Monitors ----------*/
+@media (min-width: 1200px) {
+	
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	
+	header h1 {
+		justify-content: left;
+	}
+	
+	header nav {
+		float: right;
+		justify-content: right;
+	}
+
+	header nav ul li {
+		display: inline-block
+	}
+	header nav ul li a{
+		padding-left: 20px;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: auto;
+		float: left;
+		border-top: 1px solid #eee;
+	}
+}
